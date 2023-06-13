@@ -17,7 +17,14 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="./js/map.js" defer></script>
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmjS7rFHLPCzuaESTE3RT7An1LAjcns3E&callback=initMap"
+    ></script>
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <script src="./js/carousel.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -50,7 +57,7 @@
       <section class="main__hero">
         <div class="hero-content">
           <p>La evolución de los juegos acuáticos</p>
-          <img src="./media/onda-amarilla.svg" />
+          <img src="./media/onda-amarilla_01.svg" />
         </div>
       </section>
       <section class="main__first">
@@ -77,11 +84,298 @@
           <p class="text">
             Cumplimiento de las normativas europeas en calidad y servicio
           </p>
-          <img src="./media/M2__04.png" class="image" alt="" />
+          <img src="./media/M2__04-lg.png" class="image" alt="" />
         </div>
       </section>
-      <section class="main__second"></section>
+      <section class="main__second">
+        <div class="second__content-top">
+          <p>Innovación y modernidad</p>
+          <p>Tecnología de última generación para el salvamento</p>
+        </div>
+        <div class="second__content-bottom">
+          <p>
+            Contamos con elementos de seguridad de última generación como
+            chalecos salvavidas refractarios para una fácil localización así
+            como también tablas de rescate rápidas y estables para nuestros
+            socorristas
+          </p>
+        </div>
+      </section>
+      <section class="main__third">
+        <p>
+          Estamos siempre disponibles para ayudarte y responder todas tus
+          consultas
+        </p>
+        <p>Si estás buscando una solución integral, podemos trabajar juntos</p>
+        <a href="#" target="_blank"
+          >Escríbenos! <img src="./media/arrow-right.svg" alt=""
+        /></a>
+      </section>
+      <section class="main__fourth">
+        <div class="fourth__content-short">
+          <p>La estructura de nuestro parque</p>
+          <p>es perfecta para el mar</p>
+        </div>
+        <div class="fourth__content-texts">
+          <div class="container__text">
+            <p>
+              Se caracteriza por sus grandes <span>dimensiones</span> y su gran
+              estabilidad.
+            </p>
+            <p>
+              Los enormes elementos que componen los
+              <span>parques acuáticos</span> llaman la atención desde lejos.
+            </p>
+            <p>
+              El parque es un desafío tanto para
+              <span>jóvenes como para adultos.</span>
+            </p>
+            <p>
+              Los elementos que lo componen, se pueden combinar garantizando a
+              sus clientes <span>una experiencia que no olvidarán jamás.</span>
+            </p>
+          </div>
+          <div class="container__images">
+            <img src="./media/onda-amarilla_02.svg" alt="" />
+            <img src="./media/M5__01-lg.png" alt="" />
+          </div>
+        </div>
+        <div class="fourth__content-short">
+          <p>La experiencia marca la diferencia</p>
+          <p>10 años brindando soluciones</p>
+        </div>
+        <div class="fourth__content-long">
+          <div class="container__card">
+            <p>Adaptación para personas minusválidas</p>
+            <p>
+              Todos los usuarios con movilidad reducida podrán acceder a nuestro
+              Parque Acuático desde la orilla con el cuidado de nuestros
+              monitores acuáticos en nuestra silla anfibia otorgando seguridad
+              para cada uno de ellos.
+            </p>
+          </div>
+          <div class="container__card">
+            <p>Socorrismo y vigilancia</p>
+            <p>
+              Todo el personal adscrito a las actividades contará con las
+              debidas titulaciones que exijan legalmente según el lugar que
+              ocupen.
+            </p>
+          </div>
+          <div class="container__card">
+            <p>Servicio de atención y seguridad</p>
+            <p>
+              Proveemos a nuestro clientes los elementos de seguridad necesarios
+              como los chalecos salvavidas con la constante supervisión y
+              control de nuestros guardavidas y monitores
+            </p>
+          </div>
+          <div class="container__card">
+            <p>Cuidado del ambiente</p>
+            <p>
+              Al cuidado del medio ambiente Todas nuestras casetas están
+              equipadas con paneles solares utilizar paneles solares garantiza
+              una diversa cantidad de beneficios y ventajas
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="main__fifth">
+        <div class="fifth__content-card">
+          <p>Personal de gestión y salvamento</p>
+          <p>
+            Contamos con equipos altamente capacitados y experimentados tanto
+            para la gestión, socorrismo, como para el mantenimiento de las
+            instalaciones.
+          </p>
+          <a href="#"
+            >Solicitar asesoramiento
+            <img src="./media/arrow-right.svg" alt="arrow"
+          /></a>
+          <img src="./media/M6__01-sm.png" alt="Socorrista" />
+        </div>
+        <div class="fifth__content-card">
+          <p>Alquiler de equipos flotantes</p>
+          <p>
+            Presentamos una opción flexible que permite un ensamblaje fácil y
+            rápido para ajustar la configuración del parque de año en año.
+          </p>
+          <a href="#"
+            >Solicitar asesoramiento
+            <img src="./media/arrow-right.svg" alt="arrow"
+          /></a>
+          <img src="./media/M6__02-sm.png" alt="Equipo flotante" />
+        </div>
+        <div id="carousel" class="carousel" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img
+                    src="./media/carousel-01.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img
+                    src="./media/carousel-02.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img
+                    src="./media/carousel-03.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img
+                    src="./media/carousel-04.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img
+                    src="./media/carousel-05.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img
+                    src="./media/carousel-06.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img
+                    src="./media/carousel-07.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <section class="main__sixth">
+        <div id="map"></div>
+        <div class="sixth__content">
+          <p>Oficinas de Aquamar</p>
+          <div class="content-block">
+            <p>Dirección</p>
+            <p>Calle Mestral, 3, Verges, 17142, Gerona. España.</p>
+            <img src="./media/ubicacion.svg" alt="" />
+          </div>
+          <div class="content-block">
+            <p>Email</p>
+            <p>info@aquamarpark.com</p>
+            <img src="./media/email.svg" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="main__seventh">
+        <img src="./media/onda-amarilla_02.svg" alt="Onda amarilla" />
+        <p>
+          Ofrecemos una solución completa que permite la instalación y gestión
+          de parques acuáticos con todas las medidas de seguridad necesarias,
+          cumpliendo con las leyes vigentes.
+        </p>
+        <a href="#"
+          >Estamos para ayudar <img src="./media/arrow-right.svg" alt=""
+        /></a>
+      </section>
+      <section class="main__eighth">
+        <div class="eighth__content-block">
+          <img src="./media/banner_02.png" alt="" />
+          <p>La evolución de los juegos acuáticos</p>
+          <p>Parques</p>
+          <p>Asesorías</p>
+          <p>Alquiler de equipos</p>
+        </div>
+        <form class="eighth__content-form">
+          <div class="form__header">
+            <p>Completa el formulario y recibe información</p>
+          </div>
+          <div class="form__body">
+            <div class="body-row">
+              <label><input type="text" placeholder="Nombre*" /></label>
+            </div>
+            <div class="body-row">
+              <label><input type="text" placeholder="Apellido*" /></label>
+            </div>
+            <div class="body-row">
+              <label><input type="text" placeholder="Email*" /></label>
+            </div>
+            <div class="body-row">
+              <img src="./media/bandera-españa.svg" alt="" />
+              <label><input type="number" placeholder="Móvil*" /></label>
+            </div>
+            <div class="body-row">
+              <label
+                ><input type="text" placeholder="Mensaje" class="message"
+              /></label>
+            </div>
+            <div class="body-row"><button>Enviar</button></div>
+          </div>
+        </form>
+        <a href="#"><img src="./media/arrow-up.svg" alt="Flecha arriba" /></a>
+      </section>
     </div>
-    <footer></footer>
+    <footer>
+      <p>© 2023 Todos los derechos reservados Aquamar 2009 SL.</p>
+      <p>
+        <a href="#">Aviso legal</a> / <a href="#">Política de privacidad</a> /
+        <a href="#">Certificaciones de calidad y medio ambiente</a>
+      </p>
+    </footer>
   </body>
 </html>

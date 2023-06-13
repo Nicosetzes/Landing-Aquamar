@@ -1,0 +1,14 @@
+footer {
+  background-color: $darkBlue;
+  padding: 4rem 0.75rem;
+  P {
+    color: $gray;
+    font-family: $notoSans;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-align: center;
+    a {
+      color: $gray;
+    }
+  }
+}
