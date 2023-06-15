@@ -841,7 +841,8 @@ h3 {
   display: flex;
   position: relative;
 }
-.main .main__eighth .eighth__content-form .form__body .body-row input {
+.main .main__eighth .eighth__content-form .form__body .body-row input,
+.main .main__eighth .eighth__content-form .form__body .body-row textarea {
   border: #d78c04 1px solid;
   border-radius: 0.5rem;
   height: 40px;
@@ -850,36 +851,40 @@ h3 {
   padding: 0 0 0 0.5rem;
 }
 @media only screen and (min-width: 576px) {
-  .main .main__eighth .eighth__content-form .form__body .body-row input {
+  .main .main__eighth .eighth__content-form .form__body .body-row input,
+  .main .main__eighth .eighth__content-form .form__body .body-row textarea {
     min-width: 300px;
   }
 }
-.main .main__eighth .eighth__content-form .form__body .body-row input::-webkit-input-placeholder {
+.main .main__eighth .eighth__content-form .form__body .body-row input::-webkit-input-placeholder, .main .main__eighth .eighth__content-form .form__body .body-row textarea::-webkit-input-placeholder {
   color: #024959;
   font-weight: 500;
 }
-.main .main__eighth .eighth__content-form .form__body .body-row input::-moz-placeholder {
+.main .main__eighth .eighth__content-form .form__body .body-row input::-moz-placeholder, .main .main__eighth .eighth__content-form .form__body .body-row textarea::-moz-placeholder {
   color: #024959;
   font-weight: 500;
 }
-.main .main__eighth .eighth__content-form .form__body .body-row input:-ms-input-placeholder {
+.main .main__eighth .eighth__content-form .form__body .body-row input:-ms-input-placeholder, .main .main__eighth .eighth__content-form .form__body .body-row textarea:-ms-input-placeholder {
   color: #024959;
   font-weight: 500;
 }
-.main .main__eighth .eighth__content-form .form__body .body-row input::-ms-input-placeholder {
+.main .main__eighth .eighth__content-form .form__body .body-row input::-ms-input-placeholder, .main .main__eighth .eighth__content-form .form__body .body-row textarea::-ms-input-placeholder {
   color: #024959;
   font-weight: 500;
 }
-.main .main__eighth .eighth__content-form .form__body .body-row input::placeholder {
+.main .main__eighth .eighth__content-form .form__body .body-row input::placeholder,
+.main .main__eighth .eighth__content-form .form__body .body-row textarea::placeholder {
   color: #024959;
   font-weight: 500;
 }
-.main .main__eighth .eighth__content-form .form__body .body-row input::-webkit-outer-spin-button, .main .main__eighth .eighth__content-form .form__body .body-row input::-webkit-inner-spin-button {
+.main .main__eighth .eighth__content-form .form__body .body-row input::-webkit-outer-spin-button, .main .main__eighth .eighth__content-form .form__body .body-row input::-webkit-inner-spin-button,
+.main .main__eighth .eighth__content-form .form__body .body-row textarea::-webkit-outer-spin-button,
+.main .main__eighth .eighth__content-form .form__body .body-row textarea::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-.main .main__eighth .eighth__content-form .form__body .body-row .message {
-  height: 120px;
+.main .main__eighth .eighth__content-form .form__body .body-row textarea {
+  height: 150px;
 }
 .main .main__eighth .eighth__content-form .form__body .body-row button {
   background-color: #024959;

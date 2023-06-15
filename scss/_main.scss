@@ -565,7 +565,8 @@
         .body-row {
           display: flex;
           position: relative;
-          input {
+          input,
+          textarea {
             border: $darkOrange 1px solid;
             border-radius: 0.5rem;
             height: 40px;
@@ -586,8 +587,8 @@
               margin: 0;
             }
           }
-          .message {
-            height: 120px;
+          textarea {
+            height: 150px;
           }
           button {
             background-color: $darkBlue;

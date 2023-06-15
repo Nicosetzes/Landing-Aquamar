@@ -1,8 +1,13 @@
 // Initialize and add the map
+
+$(document).ready(function () {
+  initMap();
+});
+
 function initMap() {
-  // The location of Uluru
+  // The location of Aquamar
   const location = { lat: 42.06478957042226, lng: 3.0439175258089177 };
-  // The map, centered at Uluru
+  // The map, centered at Aquamar
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 15,
     center: location,
@@ -13,5 +18,3 @@ function initMap() {
     map: map,
   });
 }
-
-window.initMap = initMap;
