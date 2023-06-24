@@ -118,11 +118,13 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     margin: 3rem 0;
+    min-height: 750px;
     .second__content-top {
       display: flex;
       flex-direction: column;
-      padding: 3.25rem 0.75rem;
+      padding: 4.25rem 0.75rem;
       p {
         &:first-of-type {
           background-color: $darkBlue;
@@ -152,7 +154,10 @@
       background-repeat: no-repeat;
       background-size: cover;
       display: flex;
-      padding: 3.25rem 0.75rem;
+      padding: 4.25rem 0.75rem;
+      @media only screen and (min-width: 768px) {
+        background-image: url("./../media/M3__02-lg.png");
+      }
       p {
         color: $darkBlue;
         font-family: $bitter;
@@ -291,6 +296,7 @@
       }
     }
     .fourth__content-long {
+      align-items: center;
       background-image: url("./../media/M5__02-sm.png");
       background-position: center;
       background-repeat: no-repeat;
@@ -300,9 +306,15 @@
       flex-wrap: wrap;
       justify-content: center;
       margin: 3rem 0;
+      min-height: 600px;
       padding: 3.5rem 0;
+      @media only screen and (min-width: 768px) {
+        background-image: url("./../media/M5__02-lg.png");
+      }
       .container__card {
-        background-color: $yellow;
+        align-content: center;
+        align-items: center;
+        background-color: rgba(239, 231, 117, 0.95);
         border-radius: 2rem;
         display: flex;
         flex-wrap: wrap;
@@ -311,30 +323,33 @@
         padding: 1.25em 1.5em;
         width: 90%;
         @media only screen and (min-width: 576px) {
-          height: 205px;
+          height: 180px;
         }
         @media only screen and (min-width: 768px) {
-          height: 290px;
+          align-content: flex-start;
+          height: 260px;
           width: 47.5%;
         }
         @media only screen and (min-width: 992px) {
-          height: 240px;
+          height: 190px;
           width: 47.5%;
         }
         @media only screen and (min-width: 1200px) {
-          height: 205px;
+          height: 160px;
           width: 47.5%;
         }
         p {
           color: $darkBlue;
           font-family: $bitter;
+          height: fit-content;
           &:first-of-type {
-            font-size: 1.5rem;
+            font-size: 1.25rem;
             font-weight: 700;
-            margin: 0.5rem 0;
+            margin: 0 0 0.25rem 0;
           }
           &:last-of-type {
             font-size: 1rem;
+            margin: 0;
           }
         }
       }
