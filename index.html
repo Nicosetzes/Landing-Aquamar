@@ -46,10 +46,12 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link" href="#">Parques</a>
-              <a class="nav-link" href="#">Asesorías</a>
-              <a class="nav-link" href="#">Alquiler de equipos</a>
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="#main__fourth">Parques</a>
+              <a class="nav-link" href="#main__fifth-asesorias">Asesorías</a>
+              <a class="nav-link" href="#main__fifth-alquiler"
+                >Alquiler de equipos</a
+              >
+              <a class="nav-link" href="#eighth__content-form">Contacto</a>
             </div>
           </div>
         </div>
@@ -115,9 +117,12 @@
           >Escríbenos! <img src="./media/arrow-right.svg" alt=""
         /></a>
       </section>
-      <section class="main__fourth">
+      <section id="main__fourth" class="main__fourth">
         <div class="fourth__content-short">
-          <p>La estructura de nuestro parque</p>
+          <p>
+            La estructura<br />
+            de nuestro parque
+          </p>
           <p>es perfecta para el mar</p>
         </div>
         <div class="fourth__content-texts">
@@ -185,26 +190,26 @@
         </div>
       </section>
       <section class="main__fifth">
-        <div class="fifth__content-card">
+        <div id="main__fifth-asesorias" class="fifth__content-card">
           <p>Personal de gestión y salvamento</p>
           <p>
             Contamos con equipos altamente capacitados y experimentados tanto
             para la gestión, socorrismo, como para el mantenimiento de las
             instalaciones.
           </p>
-          <a href="#"
+          <a href="#eighth__content-form"
             >Solicitar asesoramiento
             <img src="./media/arrow-right.svg" alt="arrow"
           /></a>
           <img src="./media/M6__01-sm.png" alt="Socorrista" />
         </div>
-        <div class="fifth__content-card">
+        <div id="main__fifth-alquiler" class="fifth__content-card">
           <p>Alquiler de equipos flotantes</p>
           <p>
             Presentamos una opción flexible que permite un ensamblaje fácil y
             rápido para ajustar la configuración del parque de año en año.
           </p>
-          <a href="#"
+          <a href="#eighth__content-form"
             >Solicitar asesoramiento
             <img src="./media/arrow-right.svg" alt="arrow"
           /></a>
@@ -328,14 +333,16 @@
       </section>
       <section class="main__seventh">
         <img src="./media/onda-amarilla_02.svg" alt="Onda amarilla" />
-        <p>
-          Ofrecemos una solución completa que permite la instalación y gestión
-          de parques acuáticos con todas las medidas de seguridad necesarias,
-          cumpliendo con las leyes vigentes.
-        </p>
-        <a href="#"
-          >Estamos para ayudar <img src="./media/arrow-right.svg" alt=""
-        /></a>
+        <div class="seventh__content">
+          <p>
+            Ofrecemos una solución completa que permite la instalación y gestión
+            de parques acuáticos con todas las medidas de seguridad necesarias,
+            cumpliendo con las leyes vigentes.
+          </p>
+          <a href="#"
+            >Estamos para ayudar <img src="./media/arrow-right.svg" alt=""
+          /></a>
+        </div>
       </section>
       <section class="main__eighth">
         <div class="eighth__content-block">
@@ -346,6 +353,7 @@
           <p>Alquiler de equipos</p>
         </div>
         <form
+          id="eighth__content-form"
           class="eighth__content-form"
           method="post"
           action="./php/email.php"
