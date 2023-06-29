@@ -43,14 +43,13 @@
               color: #fff;
               display: flex;
               margin: 0.5rem 0 0 0;
-              padding: 0.5rem 1.25rem;
-              //   &:hover {
-              //     background-color: $orange;
-              //   }
+              padding: 0.5em 1em;
+              &:hover {
+                background-color: $darkBlue;
+                color: $yellow;
+              }
               @media only screen and (min-width: 992px) {
-                // background-color: $yellow;
                 border-radius: 1.5rem;
-                // color: $blue;
                 margin: 0 0.5rem;
               }
             }
