@@ -256,6 +256,7 @@ input[type=number] {
   margin: 2rem 0 2.5rem 0;
 }
 .main .main__first .first__content-bottom .image {
+  border-radius: 2rem;
   max-width: 375px;
   width: 100%;
 }
@@ -285,11 +286,11 @@ input[type=number] {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 3rem 0;
-  min-height: 750px;
+  min-height: 825px;
 }
 @media only screen and (min-width: 992px) {
   .main .main__second {
-    background-image: url("./../media/M3__01-lg.png");
+    background-image: url("./../media/M3__01-xl.jpg");
   }
 }
 .main .main__second .second__content-top {
@@ -595,7 +596,7 @@ input[type=number] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("./../media/M5__02-sm.png");
+  background-image: url("./../media/M5__02-sm.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -609,12 +610,17 @@ input[type=number] {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 3rem 0;
-  min-height: 600px;
+  min-height: 700px;
   padding: 3.5rem 0;
 }
 @media only screen and (min-width: 768px) {
   .main .main__fourth .fourth__content-long {
-    background-image: url("./../media/M5__02-lg.png");
+    background-image: url("./../media/M5__02-lg.jpg");
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .main .main__fourth .fourth__content-long {
+    background-image: url("./../media/M5__02-xl.jpg");
   }
 }
 .main .main__fourth .fourth__content-long .container__card {

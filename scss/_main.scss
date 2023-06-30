@@ -104,6 +104,7 @@
         }
       }
       .image {
+        border-radius: 2rem;
         max-width: 375px;
         width: 100%;
         @media only screen and (min-width: 992px) {
@@ -124,9 +125,9 @@
     flex-direction: column;
     justify-content: space-between;
     margin: 3rem 0;
-    min-height: 750px;
+    min-height: 825px;
     @media only screen and (min-width: 992px) {
-      background-image: url("./../media/M3__01-lg.png");
+      background-image: url("./../media/M3__01-xl.jpg");
     }
     .second__content-top {
       display: flex;
@@ -347,7 +348,7 @@
     }
     .fourth__content-long {
       align-items: center;
-      background-image: url("./../media/M5__02-sm.png");
+      background-image: url("./../media/M5__02-sm.jpg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -356,10 +357,13 @@
       flex-wrap: wrap;
       justify-content: center;
       margin: 3rem 0;
-      min-height: 600px;
+      min-height: 700px;
       padding: 3.5rem 0;
       @media only screen and (min-width: 768px) {
-        background-image: url("./../media/M5__02-lg.png");
+        background-image: url("./../media/M5__02-lg.jpg");
+      }
+      @media only screen and (min-width: 1200px) {
+        background-image: url("./../media/M5__02-xl.jpg");
       }
       .container__card {
         align-content: center;
